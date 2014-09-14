@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5250390D19C45CB4007714C7 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5250390C19C45CB4007714C7 /* PageContentViewController.swift */; };
 		526AD6DE19BDF3D400340A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AD6DD19BDF3D400340A09 /* AppDelegate.swift */; };
 		526AD6E019BDF3D400340A09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AD6DF19BDF3D400340A09 /* ViewController.swift */; };
 		526AD6E319BDF3D400340A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526AD6E119BDF3D400340A09 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5250390C19C45CB4007714C7 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		526AD6D819BDF3D400340A09 /* EventosDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventosDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526AD6DC19BDF3D400340A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526AD6DD19BDF3D400340A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				526AD6DD19BDF3D400340A09 /* AppDelegate.swift */,
 				526AD6DF19BDF3D400340A09 /* ViewController.swift */,
 				526AD6E119BDF3D400340A09 /* Main.storyboard */,
+				5250390C19C45CB4007714C7 /* PageContentViewController.swift */,
 				526AD6E419BDF3D400340A09 /* Images.xcassets */,
 				526AD6DB19BDF3D400340A09 /* Supporting Files */,
 			);
@@ -158,6 +161,7 @@
 				TargetAttributes = {
 					526AD6D719BDF3D400340A09 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = KNC39HG8J2;
 					};
 					526AD6E919BDF3D400340A09 = {
 						CreatedOnToolsVersion = 6.0;
@@ -208,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5250390D19C45CB4007714C7 /* PageContentViewController.swift in Sources */,
 				526AD6E019BDF3D400340A09 /* ViewController.swift in Sources */,
 				526AD6DE19BDF3D400340A09 /* AppDelegate.swift in Sources */,
 			);
@@ -325,9 +330,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = EventosDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -336,9 +346,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = EventosDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -395,6 +410,7 @@
 				526AD6F619BDF3D400340A09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		526AD6F719BDF3D400340A09 /* Build configuration list for PBXNativeTarget "EventosDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +419,7 @@
 				526AD6F919BDF3D400340A09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
