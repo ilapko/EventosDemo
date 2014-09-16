@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController, UIPageViewControllerDataSource {
 
     var pageViewController : UIPageViewController?
-    var pageTitles = ["Over 200 Tips and Tricks", "Discover Hidden Features", "Bookmark Favorite Tip", "FreeRegular Update"]
-    var pageImages = ["page1.png", "page2.png", "page3.png", "page4.png"]
+    var pageTitles = ["", "", ""]
+    var pageImages = ["Tutorial 1.png", "Tutorial 2.png", "Tutorial 3.png"]
     var currentIndex = 0
     
     @IBAction func startWalkthrough(sender: UIButton) {
@@ -41,8 +41,8 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         
     }
     
-    func pageViewController(pageViewController: UIPageViewController!,
-        viewControllerBeforeViewController viewController: UIViewController!) -> UIViewController! {
+    func pageViewController(pageViewController: UIPageViewController,
+        viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
             
             var index = (viewController as PageContentViewController).pageIndex
             
@@ -57,8 +57,8 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
             return self.viewControllerAtIndex(index!)
     }
     
-    func pageViewController(pageViewController: UIPageViewController!,
-        viewControllerAfterViewController viewController: UIViewController!) -> UIViewController! {
+    func pageViewController(pageViewController: UIPageViewController,
+        viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
             
             var index = (viewController as PageContentViewController).pageIndex
             
